@@ -21,8 +21,9 @@
             </li>
 
             <!-- Kategori item -->
-            <li class="">
-                <a href="#" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Kategori">
+            <li class="{{ request()->routeIs('admin.categories.*') ? 'bg-gray-200 rounded-lg' : '' }}">
+                <a href="{{ route('admin.categories.index') }}"
+                    class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Kategori">
                     <!-- icon Kategori -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -34,8 +35,9 @@
             </li>
 
             <!-- Event item -->
-            <li class="">
-                <a href="#" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Event">
+            <li class="{{ request()->routeIs('admin.events.*') ? 'bg-gray-200 rounded-lg' : '' }}">
+                <a href="{{ route('admin.events.index') }}"
+                    class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Event">
                     <!-- icon Event -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"

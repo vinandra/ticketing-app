@@ -9,6 +9,10 @@ class Event extends Model
 {
     use HasFactory;
 
+    protected $casts = [
+        'tanggal_waktu' => 'datetime',
+    ];
+
     protected $fillable = [
         'user_id',
         'judul',
